@@ -124,7 +124,7 @@ window.gest = (function (window) {
 			
 			video.width = 300;
 			video.height = 225;
-			video.setAttribute('style', 'visibility: hidden;');
+			video.setAttribute('style', 'visibility: visible;');
 			document.body.appendChild(video);
 
 			canvas.setAttribute('style', 'width: 300px; display: none;');
