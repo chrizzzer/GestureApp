@@ -16,7 +16,12 @@
 
 	<script type="text/javascript">
 		var displayContainer = document.createElement('div');
+		displayContainer.className = 'showGesture';
+		document.body.appendChild(displayContainer);
 
+		gest.options.subscribeWithCallback(function(gesture) {
+			displayContainer.innerHTML = gesture.direction;
+		});
 
 		gest.start();
 	</script>
