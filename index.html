@@ -4,14 +4,21 @@
 	<meta charset="UTF-8">
 	<title>GestureApp</title>
 
-	<!-- includ CSS stylesheet -->
+	<!-- include CSS stylesheet -->
 	<link rel="stylesheet" href="style.css">
+
+	<!-- include gesture library -->
+	<script src="gest.js"></script>
 
 </head>
 <body>
 	<h1>This is a gesture recognition app!</h1>
 
-	<!-- include gesture library -->
-	<script src="gest.js"></script>
+	<script type="text/javascript">
+		var displayContainer = document.createElement('div');
+
+
+		gest.start();
+	</script>
 </body>
 </html>
